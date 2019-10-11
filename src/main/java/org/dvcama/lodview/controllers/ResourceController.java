@@ -256,6 +256,7 @@ public class ResourceController {
 		addDataLinks(IRI, model, req, locale);
 		addLodliveLink(locale, model, IRI);
 		addSnikGraphLink(model, IRI);
+		addOntoWikiLink(model, IRI);
 		enrichResponse(model, r, req, res);
 		return "resource";
 	}
@@ -342,6 +343,11 @@ public class ResourceController {
 	private void addSnikGraphLink(ModelMap model, String IRI)
 	{
 		model.addAttribute("snikGraphUrl", "https://www.snik.eu/graph/?class=" + IRI.replaceAll("#", "%23"));
+	}
+	
+	private void addOntoWikiLink(ModelMap model, String IRI)
+	{
+		model.addAttribute("ontoWikiUrl", "https://www.snik.eu/ontowiki/view?r=" + IRI.replaceAll("#", "%23") + "&m=" + IRI.replaceAll("[/#][^/#]*$", ""));
 	}
 	
 	private void addLodliveLink(Locale locale, ModelMap model, String IRI) {
