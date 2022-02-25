@@ -71,7 +71,7 @@
 
 ## 	EndPoint
 
-	conf:endpoint <http://www.snik.eu/sparql>;
+	conf:endpoint <https://www.snik.eu/sparql>;
 	conf:endpointType "virtuoso"; 	## 	just "virtuoso" is handled right now, this will add some "rawdata" 
 									##	options in the footer, leave this blank if you don't want these links
 
