@@ -141,7 +141,7 @@ public class SPARQLEndPoint {
 				return moreThenOneQuery(qe, results, retry, overrideProperty);
 			}
 			ez.printStackTrace();
-			throw new Exception("connection refused");
+			throw new Exception("connection refused by endpoint "+conf.getEndPointUrl());
 		}
 
 		return results;
