@@ -27,8 +27,8 @@ Example Classes:
 <li><a href="meta/EntityType">meta:EntityType</a></li>
 <li><a href="meta/Function">meta:Function</a></li>
 <li><a href="meta/Role">meta:Role</a></li>
-<li><a href="bb/InformationManagementEntityType">bb:InformationManagementEntityType</a></li>
-<li><a href="ob/InformationAquisitionMethod">ob:InformationAquisitionMethod</a></li>
+<li><a href="bb/ChiefExecutiveOfficer">bb:ChiefExecutiveOfficer</a></li>
+<li><a href="ob/ChiefInformationOfficer">ob:ChiefInformationOfficer</a></li>
 </ul>
 			</div>
 			</div>
