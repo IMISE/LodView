@@ -4,7 +4,7 @@ WORKDIR /app
 COPY pom.xml /app
 RUN mvn dependency:resolve -Dmaven.test.skip=true
 COPY . /app
-RUN mvn compile war:war
+RUN --mount=type=cache,target=/root/.m2 mvn -B -q compile war:war
 
 # Tomcat 10 needs further changes, see https://tomcat.apache.org/migration-10.html
 FROM tomcat:9
